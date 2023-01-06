@@ -1,0 +1,6 @@
+# Tests vaec jenkins ou kubernetes ?
+------ jenkins ------
+- Automatisez vos tests unitaires et d'intégration, de sécurités.
+- les tests d'acceptation, tests web, les tests fonctionnels, 
+- les tests de performance, les tests de charge et autres. 
+Tous ceux-ci ont leur place dans un environnement de build automatisé.
