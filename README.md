@@ -15,10 +15,10 @@
 
 ## Création des images FastApi et Streamlit par docker-compose
  - $ cd MLops-Satifpy2
- - # créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
-    $ docker network create AIservice
+ - créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
+ - $ docker network create AIservice
  - $ docker network ls   ( pour vérifier )
- - # lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
+ - lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
     $ docker-compose up -d --build
     => parfait en 4-5 minutes
     => sauf petit conseil en court de route :
