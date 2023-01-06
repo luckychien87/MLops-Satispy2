@@ -1,6 +1,5 @@
-# Tests vaec jenkins ou kubernetes ?
------- jenkins ------
-- Automatisez vos tests unitaires et d'intégration, de sécurités.
-- les tests d'acceptation, tests web, les tests fonctionnels, 
-- les tests de performance, les tests de charge et autres. 
-Tous ceux-ci ont leur place dans un environnement de build automatisé.
+- le fichier "logo_SatisPy_Project.png" est copié dans /streamlit pour etre disponible
+=> je préfèrerai qu'il soit dans le dossier /data mais je ne suis pas arrivé à modifier le .py
+de streamlit pour que la fonction insert_head() trouve le bon chemin
+( car pb, le dockerfile => WORKDIR /streamlit )
+
