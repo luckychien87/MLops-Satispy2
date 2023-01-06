@@ -2,9 +2,9 @@
 
 A - si besoin de copier la totalité de ce REPO sur ton github perso ( avec fork )
 # sur un navigateur
-1 - aller sur ce github https://github.com/Fred-Zang/MLops-Satispy2
-2 - s'indentifier 
-3 - cliquer sur "fork" ( en haut-droite ) du github 
+ - aller sur ce github https://github.com/Fred-Zang/MLops-Satispy2
+ - s'indentifier 
+ - cliquer sur "fork" ( en haut-droite ) du github 
     => cela clone la totalité de son REPO sur ton github perso
 
 B - copier ce REPO sur ta machine en local
