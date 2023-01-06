@@ -41,6 +41,7 @@ B - copier ce REPO sur ta machine en local
     = créer une action qui exécute des tests avec pytest et contrôle la qualité de votre code avec Flake8 lorsque vous chargez sur votre dépôt.
     => voir github action
     
+# Urgent à voir
 ? utiliser Jenkins, Kubernetes et Airflow => ne vont-ils pas modifier l'architecture de notre github, de nos docker-compose,de nos fichier et dossier ?
 ce serait bon de le savoir pour éviter de refaire bien des choses ensuite.
 Je vais demander à Alban et/ou Daniel
