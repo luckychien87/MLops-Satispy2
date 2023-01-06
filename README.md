@@ -1,51 +1,48 @@
-# streamlit-fastapi-model-serving-mlops-projet2
+# ------------ aide de départ ----------------------- #
 
-
-
-### Deployment
-
-
-
-### Debugging
-
-# ------------ aide installation fred ----------------------- #
-
+A - si besoin de copier la totalité de ce REPO sur ton github perso ( avec fork )
 # sur un navigateur
-1 - aller sur le github de la demoiselle = https://github.com/RihabFekii/streamlit-app
-2 - m'indentifier sur github
-3 - cliquer sur "fork" ( en haut-droite ) du github demoiselle étant sur son REPO global
-    => cela clone la totalité de son REPO sur mon github perso
+1 - aller sur ce github https://github.com/Fred-Zang/MLops-Satispy2
+2 - s'indentifier 
+3 - cliquer sur "fork" ( en haut-droite ) du github 
+    => cela clone la totalité de son REPO sur ton github perso
 
-# sur mon IDE VSC en local
-1 - création d'un dossier de travail "streamlit_github_perso"
-2 - se placer sur ce dossier => streamlit_github_perso$
-3 - $ git init  # pour initialiser git sur ce dossier  ( pas sur que c'est utile car git déjà présent)
-4 - $ git clone https://github.com/Fred-Zang/streamlit-app.git  # cloner mon new REPO en local VSC
-    => cela va créer les dossier : backend (+dockerfile...) + frontend ( +dockerfile...) + data-models + storage ( csv ) + docker-compose
-    => et tous ces dossier dans un dossier de travail principal "streamlit-app"
-    => donc il n'y avait pas besoin de créer un dossier de travail au départ
+B - copier ce REPO sur ta machine en local
+# sur un IDE VSC en local
+1 - se placer à la racine de ton dossier de travail ( pas besoin de créer un autre dossier )
+2 - $ git clone https://github.com/Fred-Zang/MLops-Satispy2.git  
+    => cela va copier tous les dossier et fichiers du REPO dans un nouveau dossier local "MLops-Satispy2"
 
-# création des images par dockerfile
-1 - se placer sur fred07@PCwikHap:~/DataScientest_fred07/streamlit_github_perso/streamlit-app$
-2 - créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
-    => $ docker network create AIservice (voir avec $ docker network ls   si pas déjà fait)
-3 - lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
-    => docker-compose up -d --build
+# Création des images FastApi et Streamlit par docker-compose
+1 - $ cd MLops-Satifpy2
+2 - # créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
+    $ docker network create AIservice
+3 - $ docker network ls   ( pour vérifier )
+4 - # lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
+    $ docker-compose up -d --build
     => parfait en 4-5 minutes
     => sauf petit conseil en court de route :
     """ WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. 
     It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
     WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
     You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command. """
-
-4 - si docker-compose -d --build déjà lancé alors plus besoin de build car images déjç faites
-=> docker-compose -d           # suffisant ensuite
+    => donc mise à jour de pip recommandée
 
 # voir l'API
 1 - aller sur localhost:8000/docs
+
 # voir le streamlit
 1 - aller sur localhost:8501
 
-
+# A faire si possible rapidement :
+    - voir comment tagger tout nouvelle image dès qu'on faut 1 modif de fichiers 
+    - voir comment synchroniser toutes modifs entre PC local et repo github
+    - voir dés le début à effectuer les tests unitaires, d'intégration etc ...
+    = créer une action qui exécute des tests avec pytest et contrôle la qualité de votre code avec Flake8 lorsque vous chargez sur votre dépôt.
+    => voir github action
+    
+? utiliser Jenkins, Kubernetes et Airflow => ne vont-ils pas modifier l'architecture de notre github, de nos docker-compose,de nos fichier et dossier ?
+ce serait bon de le savoir pour éviter de refaire bien des choses ensuite.
+Je vais demander à Alban et/ou Daniel
 
 
