@@ -31,7 +31,7 @@ def insert_head(img1, img2):
 # créer une liste de 4 noms des pages
 
 pages = ["Le Projet en détails", "Dataviz du Projet", "Filtrages, Tokenisations, Lemmatisations et Vectorisations", "Modélisations à la demande","Conclusion et Remerciements"]
-
+# pas besoin d'autant de pages ... => modélisation est le + important car demandé pour le projet
 page = st.sidebar.radio("Aller vers", pages)
 
 #------------------------------------------------------------------------------------------
