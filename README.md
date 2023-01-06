@@ -1,6 +1,6 @@
 # ------------ aide de départ ----------------------- #
 
-# A - si besoin de copier la totalité de ce REPO sur ton github perso ( avec fork )
+# A - si besoin de copier la totalité de ce REPO sur ton github perso
 ## sur un navigateur
  - aller sur ce github https://github.com/Fred-Zang/MLops-Satispy2
  - s'indentifier 
