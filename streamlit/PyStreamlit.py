@@ -42,7 +42,10 @@ if page ==pages[0]:  # sur la page 0 Introduction
 	# affichage
     st.write("### Frontend Streamlit")
     insert_head('https://datascientest.fr/train/assets/logo_datascientest.png', "logo_SatisPy_Project.png")
-
+	# il faudrait charger le logo de datascientest en png dans le dossier /data/ pour éviter une connexion @
+	# il faudrait aussi que insert_head() puisse chercher les images sur /data/ 
+	# => probleme de chemin car on est sur /streamlit/ grace au dockerfile
+	
 	# title du page
     st.markdown("<h1 style='text-align: center; color: white;'>SatisPy Projet</h1>", unsafe_allow_html=True)
     st.write("### Préambule :") # écrire du texte ( # = taille, ##, ###) ici le titre de la page
