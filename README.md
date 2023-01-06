@@ -1,24 +1,24 @@
 # ------------ aide de départ ----------------------- #
 
-A - si besoin de copier la totalité de ce REPO sur ton github perso ( avec fork )
-# sur un navigateur
+# A - si besoin de copier la totalité de ce REPO sur ton github perso ( avec fork )
+## sur un navigateur
  - aller sur ce github https://github.com/Fred-Zang/MLops-Satispy2
  - s'indentifier 
  - cliquer sur "fork" ( en haut-droite ) du github 
     => cela clone la totalité de son REPO sur ton github perso
 
-B - copier ce REPO sur ta machine en local
-# sur un IDE VSC en local
-1 - se placer à la racine de ton dossier de travail ( pas besoin de créer un autre dossier )
-2 - $ git clone https://github.com/Fred-Zang/MLops-Satispy2.git  
+# B - copier ce REPO sur ta machine en local
+## sur un IDE VSC en local
+ - se placer à la racine de ton dossier de travail ( pas besoin de créer un autre dossier )
+ - $ git clone https://github.com/Fred-Zang/MLops-Satispy2.git  
     => cela va copier tous les dossier et fichiers du REPO dans un nouveau dossier local "MLops-Satispy2"
 
-# Création des images FastApi et Streamlit par docker-compose
-1 - $ cd MLops-Satifpy2
-2 - # créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
+## Création des images FastApi et Streamlit par docker-compose
+ - $ cd MLops-Satifpy2
+ - # créer tout d'abord le reseau AIservice avant de lancer le docker-compose    
     $ docker network create AIservice
-3 - $ docker network ls   ( pour vérifier )
-4 - # lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
+ - $ docker network ls   ( pour vérifier )
+ - # lancer le docker-compose pour créer toutes les images ( frontend et backend etc ...)
     $ docker-compose up -d --build
     => parfait en 4-5 minutes
     => sauf petit conseil en court de route :
